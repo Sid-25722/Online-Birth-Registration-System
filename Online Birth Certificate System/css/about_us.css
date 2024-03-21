@@ -1,0 +1,70 @@
+
+.about-us-content {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about-us-content h2 {
+    text-align: center;
+}
+
+.about-us-content .mission-vision {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: space-between;
+
+
+    /* border: solid 1px black; */
+    /* gap: 5em; */
+    max-width: 1000px;
+    
+}
+
+.about-us-content .mission, .about-us-content .vision {
+    border: solid 1px black;
+    padding: 20px 30px;
+    box-shadow: 20px 20px rgba(0, 0, 0, .1);
+    text-align: center;
+    border-radius: 30px;
+    /* height: 200px */
+}
+
+.about-us-content img {
+    margin-bottom: 10px;
+}
+
+
+.about-us-content h1 {
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.about-us-content div {
+    margin: 10px;
+}
+
+.about-us-content p {
+    padding-top: 20px;
+}
+
+
+
+.footer{
+    position:absolute;
+    bottom:0;
+    /* margin-top: 40px; */
+}
+@media screen and (max-width: 700px){
+    .about-us-content .mission-vision {
+        /* grid-template-rows: repeat(2, 1fr); */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    
+}

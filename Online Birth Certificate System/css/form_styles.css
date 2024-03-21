@@ -1,0 +1,137 @@
+:root {
+	--main-accent-color: rgb(25, 191, 114);
+	--theme-color: black;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: whitesmoke;
+
+    /* Body Layout */
+    display: grid;
+    grid-template-rows: 80px auto;
+
+}
+
+
+/********** NAVIGATION BAR *********/
+.header {
+	display: flex;
+	justify-content: start;
+	height: 80px;
+    max-width: 100%;
+	padding: 0 30px;
+	box-shadow: 0 15px 10px -15px rgba(0, 0, 0, .1);
+    background-color: var(--main-accent-color);
+}
+.header a {
+	text-decoration: none;
+	color: white;
+}
+#logo {
+	font-family: 'Berlin Sans FB Demi', 'sans-serif';
+}
+span {
+	color: black;
+}
+
+
+/********* FORM CONTAINER/WRAPPER *********/
+.login-wrapper label {
+    padding: 10px 0;
+}
+
+.register-wrapper, .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/************ FORM ***************/
+#form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-top: 4px solid var(--main-accent-color);
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: var(--main-accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input {
+    border: 2px solid #ccc;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 90%;
+}
+.input-box input:focus {
+    outline: 0;
+}
+
+.input-box.success input {
+    border-color: #09c372;
+}
+
+.input-box.error input {
+    border-color: #ff3860;
+}
+
+.input-box .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+    padding: 5px 0;
+}
+
+.login-register {
+    text-align: center;
+}
+
+.login-register a {
+    text-decoration: none;
+    color:var(--main-accent-color);
+    font-weight: 600;
+}
+
+.remember-forgot {
+    padding: 10px 0;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #form {
+        min-width: 200px;
+    }
+}
